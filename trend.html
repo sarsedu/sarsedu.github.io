@@ -5,19 +5,17 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
+#xyz .mySlides {display:none}
 
 /* Slideshow container */
-.slideshow-container {
+#xyz .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
 /* Caption text */
-.text {
+#xyz .text {
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
@@ -28,7 +26,7 @@ body {font-family: Verdana,sans-serif;}
 }
 
 /* Number text (1/3 etc) */
-.numbertext {
+#xyz .numbertext {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -37,7 +35,7 @@ body {font-family: Verdana,sans-serif;}
 }
 
 /* The dots/bullets/indicators */
-.dot {
+#xyz .dot {
   height: 13px;
   width: 13px;
   margin: 0 2px;
@@ -73,7 +71,7 @@ body {font-family: Verdana,sans-serif;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
-    body{width:100%;margin:0px;overflow-x: hidden;}
+    body #xyz{width:100%;margin:0px;overflow-x: hidden;}
     #content a{
         display: block;
         padding:10px 0px;
@@ -83,19 +81,20 @@ body {font-family: Verdana,sans-serif;}
         background-color:#f2f2f2;
         color:#111;text-decoration:none;
     }
-    #content a img{
+   #xyz #content a img{
         height:60px;
         margin-top:10px;
         
         display:block;
     }
-    #content a #text{
+   #xyz #content a #text{
         display:block;
         margin-top: -50px;
         margin-left:90px;
     }
 </style>
 <body>
+	<div id="xyz">
 <div class="slideshow-container">
 
 <div class="mySlides fade">
@@ -175,6 +174,7 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
+	</div>
 </body>
 </html>
 
