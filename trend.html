@@ -125,31 +125,11 @@ body {font-family: Verdana,sans-serif;}
   <span class="dot"></span> 
 </div>
 
-<script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
 <div id="content">
 	<div style="width:100%;padding:20px 0px;background-color:dodgerblue;color:white;font-size:30px;"><center>Science</center></div>
     <div style="background-color:#d9534f;color:white;padding:5px 0px;">Astronomy</div>
-    <a href=""><img src="https://img.youtube.com/vi/jARfs-m_HVA/default.jpg"><span id="text">Red shift , Blue Shift</span></a>
+    <a href="/www/qs.html"><img src="https://img.youtube.com/vi/jARfs-m_HVA/default.jpg"><span id="text">Red shift , Blue Shift</span></a>
     <div style="background-color:#d9534f;color:white;padding:5px 0px;">Radiology</div>
     <div style="width:100%;padding:20px 0px;background-color:#2BC22B;color:white;font-size:30px;"><center>Computer Science</center></div>
     </div>
@@ -174,6 +154,27 @@ window.onclick = function(event) {
   }
 }
     </script>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 </body>
 </html>
 
