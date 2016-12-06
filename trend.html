@@ -1,13 +1,18 @@
-<!doctype html>
-
 <html>
-<head><style>
+<head><base target="_parent" /></head>
+<body id="body" style="width:100%;">
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
 .mySlides {display:none}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  
+  position: relative;
   margin: auto;
 }
 
@@ -89,19 +94,10 @@
         margin-top: -50px;
         margin-left:90px;
     }
-	#allcontentfur{
-		width:100%;background-color:white;
-		display:block;
-		top:20px;
-		position:relative;
-	}
 </style>
-</head>
-
 <body>
-	<div id="allcontentfur">
-		<br><br><br>
-	<div class="slideshow-container">
+<div class="slideshow-container">
+
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
  <a href="qa.html?id=cOE40P5rHCA&title=Radition from particles&des=get to know about radiations alpha, beta and gama ."> <img src="https://img.youtube.com/vi/cOE40P5rHCA/default.jpg" style="width:100%;height:250px;"></a>
@@ -147,18 +143,15 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 <div id="content">
 	<div style="width:100%;padding:20px 0px;background-color:dodgerblue;color:white;font-size:30px;"><center>Science</center></div>
     <div style="background-color:#d9534f;color:white;padding:5px 0px;">Astronomy</div>
-    <a href="qa.html?id=jARfs-m_HVA&title=Astronomy:%20Intergalatic%20red%20and%20blue%20shift&des=There%20are%20several%20main%20pieces%20of%20evidence%20that%20support%20the%20Big%20Bang%20theory.%20One%20is%20the%20fact%20that%20the%20universe%20is%20expanding,%20proven%20with%20something%20called%20red%20shift.%20The%20second%20is%20something%20called%20cosmic%20microwave%20background%20radiation.%20The%20third%20is%20the%20abundance%20of%20different%20elements%20in%20the%20universe.A%20blueshift%20is%20any%20decrease%20in%20wavelength,%20with%20a%20corresponding%20increase%20in%20frequency,%20of%20an%20electromagnetic%20wave;%20the%20opposite%20effect%20is%20referred%20to%20as%20redshift.%20In%20visible%20light,%20this%20shifts%20the%20color%20from%20the%20red%20end%20of%20the%20spectrum%20to%20the%20blue%20end."><img src="https://img.youtube.com/vi/jARfs-m_HVA/default.jpg"><span id="text">Red shift , Blue Shift</span></a>
+    <a href=""><img src="https://img.youtube.com/vi/jARfs-m_HVA/default.jpg"><span id="text">Red shift , Blue Shift</span></a>
     <div style="background-color:#d9534f;color:white;padding:5px 0px;">Radiology</div>
-     <a href="qa.html?id=cOE40P5rHCA&title=Radition%20from%20particles&des=get%20to%20know%20about%20radiations%20alpha,%20beta%20and%20gama%20."><img src="https://img.youtube.com/vi/cOE40P5rHCA/default.jpg"><span id="text">radiation from radio active particles</span></a>
     <div style="width:100%;padding:20px 0px;background-color:#2BC22B;color:white;font-size:30px;"><center>Computer Science</center></div>
-    <div style="background-color:#d9534f;color:white;padding:5px 0px;">C++</div>
-    <a href="qa.html?id=TGGMjR-BOWU&title=C++%20classes%20and%20objects&des=Learn%20the%20difference%20between%20classes%20andobjects.%20learn%20the%20basic%20difference%20between%20them%20.%20Get%20to%20know%20basics%20of%20OOP."><img src="https://img.youtube.com/vi/TGGMjR-BOWU/default.jpg"><span id="text">C++ classes and objects</span></a>
     </div>
 	<style src="/lib.css"></style>
   <script>
@@ -181,8 +174,7 @@ window.onclick = function(event) {
   }
 }
     </script>
-	</div>
-	</body>
-    
-	
+</body>
 </html>
+
+    
