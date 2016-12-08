@@ -1,0 +1,106 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+        #h1{
+        width:0px;
+        overflow:hidden;transition:3s;
+        
+        }
+        
+        #introb{
+            min-width: 99vw;
+            max-width:100vw;
+            display:inline-block;
+            background-color: dodgerblue;
+            color:white;
+            font-family: 'Poiret One';
+            height:100vh;
+            max-height:100vh;
+            overflow:hidden;
+            position:fixed;
+            top:0px;
+            z-index: 99999999999999999;
+            transition: opacity 2s;
+            display: block;
+        }
+        table{margin-top: 20%;}
+         #wb{background-color:dodgerblue;padding-top:150px;color:white;}
+        button{background-color:dodgerblue;border:none;padding:20px;display:block;border-radius:10px;color:white;font-size:15px;font-family: 'Poiret One', arial;}
+        #namefill{display:none;z-index: 9999999999999999999999999999999999999999999999;
+width:100%;height:100%;position:fixed;top:0px;left:0px;color:white;background-color:dodgerblue;
+        }
+        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        body{width:100%;margin:0px;font-family: 'Poiret One', arial;}
+    </style>
+     <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
+    <script src="cordova.js"></script>           <!-- phantom library, needed for Cordova api calls, added during build -->
+     <script src="js/app.js"></script>            <!-- recommended location of your JavaScript code relative to other JS files -->
+     <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see README for details -->
+    
+    <script src="lib.js"></script>
+</head>
+<body onload="loaded()">
+    
+   <nav style="position:fixed;top:0px;background-color:dodgerblue;width:100%;min-height:50px;padding-top:30px;color:white;font-family: 'Poiret One', arial;font-size:30px;max-height:50px;height:50px;">SARS<a  style="display:block;position:fixed;float:right;right:0px;top:0px;height:40px;padding:20px;background-color:#5DB579;height:80;text-decoration:none;color:white;max-height:50px;height:40px;overflow:hidden;" href="trophy.html">Trophies</a></nav>
+    
+    <center>
+    <div id="namefill">
+       <div style="position:fixed;top:0px;right:0px;height:50px;"><img id="nextbuttonnf" onclick="change()" src="next.png" height="50px" ></div> 
+        <br><br><br><br><center><img id="spec" src="book.png" height="200"><br></center>
+       <div style="position:fixed;bottom:0px;height:50px;" id="aboutcad">Get the best of education </div>
+            </div>
+       
+    </center>
+    <br><br><div id="wb">
+    <a  style="float:right;right:90px;top:10px;padding:10px;border-radius:15px;boder-size:5px;border-color:white;border-style:solid;text-decoration:none;color:white;" href="settings.html">Settings</a><br>
+    Welcome <p id="demo">Unknown</p>
+    <br>
+    <br><br><center><a href="char.html" style="display:block;color:white;text-decoration:none;border-radius:50%; border-style:solid;border-color:white;border-width:3px;overflow:hidden;height:100px;width:100px;"><img id="char" src="icon.png" style="width:100px;"></a></center><br><br><br>
+    
+    </div>
+    <br><br><br><br>
+    <div w3-include-html="https://sarsedu.github.io/trend.html"></div>
+    <script> w3IncludeHTML();</script>
+    <script>
+    function loaded(){
+         if(localStorage.char !== undefined) {
+        document.getElementById("char").src = localStorage.char;
+         }else{
+             document.getElementById("char").src = "jnk.jpg"; 
+         }
+        if(typeof(Storage) !== "undefined") {
+        if (localStorage.intro) {
+             document.getElementById("namefill").style.display ="none";
+           
+        } else {
+            localStorage.intro = 2;
+             document.getElementById("namefill").style.display ="block";
+        }
+        } 
+       
+        
+       document.getElementById("demo").innerHTML = localStorage.name;
+         if (cordova.platformId == 'android') {
+    StatusBar.backgroundColorByHexString("#1e90ff");
+}
+    }
+       
+       
+    </script>
+    <script>
+    function openscrollmenu(){
+   document.getElementById("scrollmenu").style.height = "100vh";
+    }
+        function clsscrollmenu(){
+            document.getElementById("scrollmenu").style.height = "0px"; 
+            
+        }
+        
+       
+</script>   
+</body>

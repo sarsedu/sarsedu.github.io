@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<script src="lib.js">
+</script>
+<head>
+<style>
+body{
+margin:0px;
+    background-color:dodgerblue;
+    color:white;
+}
+    @import url('https://fonts.googleapis.com/css?family=Poiret+One');
+ body{width:100%;margin:0px;font-family: 'Poiret One', arial;}
+</style>
+<!-- from this-->
+ <!-- to this part only for home page-->
+ <title>Sars vedio</title>
+<meta content="width=device-width,initial-
+scale=1"name=viewport>
+<meta content="Get YouTube gameplay and reviews as well as utility and essential apps and games for Android and online."name=description>    </head>
+<body id="body" onscroll="myFunction()" onload="loaded()">
+ <span style="display:block;width:100%;height:55px;background-color:#CC0000;padding-top:20px;font-family:arial; color:white;font-size:20px;box-shadow:2px 2px 2px 2px rgba(1,1,1,0.5);position:fixed;">
+<a href="home.html"><img src="backbut.png" height="29" style="padding-left:20px;padding-right:20px;"></a> <span id="heading" style="font-size:20px;font-family: 'Poiret One', arial;">Settings</span></span>
+<br><script src="https://apis.google.com/js/platform.js"></script>
+    <br><br><br>
+    <hr style="border-style:solid;border-color:white;border-width:2px;">
+    <span style="font-size:30px;padding:10px;color:white;">Your Name</span> <input type="text" id="name" style="margin-left:20px;height:30px;background-color:white;border-radius:10px;"><button onclick="namechange()" style="margin-left:20px;background-color:brown;color:white;border-radius:10px;border-style:solid;border-color:white;padding:10px;">Save</button>
+    <hr style="border-style:solid;border-color:white;border-width:2px;">
+    <span style="font-size:30px;padding:10px;color:white;">Reset trophies</span><button onclick="reset()" style="margin-left:20px;background-color:brown;color:white;border-radius:10px;border-style:solid;border-color:white;padding:10px;">reset</button>
+    <hr style="border-style:solid;border-color:white;border-width:2px;">
+    <span style="font-size:30px;padding:10px;color:white;"> 
+    <a href="credits.html" style="margin-left:20px;background-color:brown;color:white;border-radius:10px;border-style:solid;border-color:white;padding:10px;margin-top:40px;text-decoration:none;">Credits</a>
+        <hr style="border-style:solid;border-color:white;border-width:2px;">
+        <span style="font-size:30px;padding:10px;color:white;">Share App</span><br><br><a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsarsacad.github.io%2F" style="margin-left:20px;background-color:brown;color:white;border-radius:10px;border-style:solid;border-color:white;padding:0px;text-decoration:none;">Facebook</a>
+        <br><br>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsarsacad.github.io%2F&text=Sars acad app for education in fun i love it" style="margin-left:20px;background-color:brown;color:white;border-radius:10px;border-style:solid;border-color:white;padding:0px;text-decoration:none;">twitter</a>
+        <br><br><a href="https://plus.google.com/share?url=https%3A%2F%2Fsarsacad.github.io%2F" style="margin-left:20px;background-color:brown;color:white;border-radius:10px;border-style:solid;border-color:white;padding:0px;text-decoration:none;">Google +</a>
+        <br><br><a href="whatsapp://send?text=kwike%20https%3a%2f%2fsarsacad.github.io%2f" style="margin-left:20px;background-color:brown;color:white;border-radius:10px;border-style:solid;border-color:white;padding:0px;text-decoration:none;">Whatsapp</a>
+    </span>
+      <script>
+          function loaded(){
+              if (cordova.platformId == 'android') {
+    StatusBar.backgroundColorByHexString("#CC0000");
+}
+          }
+function namechange(){
+    var namein = document.getElementById("name").value;
+                          if(typeof(Storage) !== "undefined") {
+        if (localStorage.name) {
+            localStorage.name = namein;
+        } else {
+            localStorage.name = "SARS user";
+        }
+        } 
+}
+          function reset(){
+              localStorage.clickcount = 1;
+          }
+    </script>
+    
+    
+</body>
+</html>
